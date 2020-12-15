@@ -43,6 +43,7 @@ class AuthFragment : BaseFragment<AuthViewModel, AuthFragmentBinding>(R.layout.a
         initGoogleSignIn()
     }
 
+
     private fun initGoogleSignIn() {
         mGoogleSignInOption = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
             .requestIdToken(getString(R.string.default_web_client_id))
