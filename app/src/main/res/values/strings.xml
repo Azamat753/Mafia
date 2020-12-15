@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Mafia</string>
+    <string name="phone_number_text">Номер телефона</string>
+    <string name="phone_code_text">Проверочный код</string>
+    <string name="phone_example_hint">+996xxxxxx</string>
+    <string name="phone_code_example_hint">xxx</string>
+    <string name="next_text">Дальше</string>
+    <string name="name_text">Имя</string>
+    <string name="send_code">Отправить код</string>
+    <string name="next_ready">Готово</string>
 </resources>

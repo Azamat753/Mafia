@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "467025664116",
+    "firebase_url": "https://mafia-cbdb9.firebaseio.com",
+    "project_id": "mafia-cbdb9",
+    "storage_bucket": "mafia-cbdb9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:467025664116:android:3982ccc08babf2d70b9921",
+        "android_client_info": {
+          "package_name": "com.lawlett.mafia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "467025664116-gavl2jneli3i87m90np9emi9j4v8aocp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6hwmg_ol0GPWRr2M_iuIrG8seG3MmpHg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "467025664116-gavl2jneli3i87m90np9emi9j4v8aocp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
