@@ -3,12 +3,30 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation.xml"
-    app:startDestination="@id/authFragment">
+    app:startDestination="@id/homeFragment">
+
+    <action
+        android:id="@+id/navigation_global_to_AuthFragment"
+        app:popUpTo="@id/mobile_navigation.xml"
+        app:popUpToInclusive="true"
+        app:destination="@id/authFragment"/>
+
+    <action
+        android:id="@+id/navigation_global_to_HomeFragment"
+        app:popUpTo="@id/mobile_navigation.xml"
+        app:popUpToInclusive="true"
+        app:destination="@id/homeFragment"/>
 
     <fragment
         android:id="@+id/authFragment"
         android:name="com.lawlett.mafia.ui.auth.AuthFragment"
         android:label="Authentication"
         tools:layout="@layout/auth_fragment" />
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.lawlett.mafia.ui.home.HomeFragment"
+        android:label="home_fragment"
+        tools:layout="@layout/home_fragment" />
 
 </navigation>

@@ -8,4 +8,7 @@
     <string name="name_text">Имя</string>
     <string name="send_code">Отправить код</string>
     <string name="next_ready">Готово</string>
+    <string name="lobbiText1">Лобби 1</string>
+    <string name="lobbiText2">Лобби 2</string>
+    <string name="lobbiText3">Лобби 3</string>
 </resources>

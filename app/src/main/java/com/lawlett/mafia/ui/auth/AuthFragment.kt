@@ -1,7 +1,8 @@
 package com.lawlett.mafia.ui.auth
 
 import android.content.Intent
-import android.util.Log
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.fragment.findNavController
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
@@ -17,6 +18,7 @@ import com.lawlett.mafia.core.BaseFragment
 import com.lawlett.mafia.core.gone
 import com.lawlett.mafia.core.showToast
 import com.lawlett.mafia.core.visible
+import com.lawlett.mafia.data.Prefs
 import com.lawlett.mafia.databinding.AuthFragmentBinding
 import org.koin.android.ext.android.inject
 
@@ -117,8 +119,12 @@ class AuthFragment : BaseFragment<AuthViewModel, AuthFragmentBinding>(R.layout.a
                     view?.let {
                         Snackbar.make(it, "Authentication Failed.", Snackbar.LENGTH_SHORT).show()
                     }
+                }else{
+                    updateUI(auth.currentUser)
+                    Prefs(requireContext()).setToken(task!!.result!!.user!!.uid)
+                    val navHostFragment = requireActivity().supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
+                    navHostFragment.navController.navigate(R.id.navigation_global_to_HomeFragment)
                 }
-                updateUI(auth.currentUser)
             }
     }
 

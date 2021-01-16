@@ -15,6 +15,30 @@
       },
       "oauth_client": [
         {
+          "client_id": "467025664116-11uk008u116sjn6lkd0krni5v6ml6gfv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lawlett.mafia",
+            "certificate_hash": "13007570cd21e1007845341dac95920ddeb024dd"
+          }
+        },
+        {
+          "client_id": "467025664116-9ou00ttlj5jbefd6fh4ltab5r8499ibi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lawlett.mafia",
+            "certificate_hash": "259b3cbf3eb34b475d7264f3448cb31012afa411"
+          }
+        },
+        {
+          "client_id": "467025664116-la1r8prkbcvjb2b1frrt63ik714dangf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lawlett.mafia",
+            "certificate_hash": "499e4e2fa3bfa4181e5843e79416c409dafda836"
+          }
+        },
+        {
           "client_id": "467025664116-gavl2jneli3i87m90np9emi9j4v8aocp.apps.googleusercontent.com",
           "client_type": 3
         }
